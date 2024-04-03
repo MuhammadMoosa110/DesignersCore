@@ -1,0 +1,35 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+     
+}
+body{
+    background: linear-gradient(123deg, rgb(3, 148, 108) 0.00%, rgb(33, 35, 34) 50.00%);
+}
+ .wrapper{
+    width: 100%;
+    height: 100%;
+    
+ }
+ .page1{
+    width: 100%;
+    height: 100vh;
+    background: #00000067;
+ }
+ 
+ .page2{
+    width: 100%;
+    height: 40vh;
+    background: white;
+ }
+ 
+ .page3{
+    width: 100%;
+    height: 70vh;
+    background:  #00000067;
+ }
