@@ -9,7 +9,7 @@
      
 }
 body{
-    background: linear-gradient(123deg, rgb(3, 148, 108) 0.00%, rgb(33, 35, 34) 50.00%);
+    background: linear-gradient(180deg, rgb(3, 148, 108) 0.00%, rgb(0, 0, 0) 50.00%); 
 }
  .wrapper{
     width: 100%;
@@ -17,19 +17,121 @@ body{
     
  }
  .page1{
+   margin-top: -6%;
     width: 100%;
     height: 100vh;
     background: #00000067;
- }
+    display: flex;
+
+}
+.page1 video{
+   width: 100%;
+   height: 100%;
+   object-fit: cover;
+   z-index: -100;
+   
+}
+.page1 .glass{ 
+   backdrop-filter: blur(10px);
  
+   -webkit-backdrop-filter: blur(10px);
+   box-shadow: 0 8px 2px 0 rgba(255 , 255 , 255 , 0.1);
+   width: 100vw;
+   height: 100vh;
+   background: linear-gradient(135deg , rgba(255 , 255 , 255 , 0.1) , rgba(252, 3, 3, 0));
+}
+.page1 .text{ 
+   margin-top: 20%;
+   position: absolute;
+   background: transparent;
+   width: fit-content;
+}
+ .page1 .text h1{
+   font-size:5vmax;
+   margin-top: 18%;
+   font-weight: 800;
+   background: linear-gradient(100deg, rgb(133, 255, 220) 0.00%, rgb(227, 252, 1) 180.00%);
+   -webkit-background-clip: text;
+   color: transparent;
+}
+.page1 .text h2{   
+  font-size:3vmax;
+  gap: 10vmax;
+  font-weight: 400;
+  color: lightgoldenrodyellow;
+}
  .page2{
     width: 100%;
-    height: 40vh;
+    height: 80vh;
     background: white;
+ }
+ 
+.swiper {
+   width: 100%;
+   height: 100%;
+ }
+ 
+ .swiper-slide {
+   text-align: center;
+   font-size: 18px;
+   background: #fff;
+   transition: cubic-bezier(0.215, 0.610, 0.355, 1);
+   /* Center slide text vertically */
+   display: flex;
+   justify-content: center;
+   align-items: center;
+ }
+ 
+ .swiper-slide img {
+   display: block;
+   width: 100%;
+   height: 100%;
+   
+   
+   
+   object-fit: cover;
+ }
+ .swiper-slide .Spic1{
+   justify-content: center;
+   align-items: center;
+    background: linear-gradient(135deg , rgba(255 , 255 , 255 , 0.1) , rgba(255 , 255 , 255 , 0));
+    box-shadow: 2px 4px 8px  ;
+ 
+ }
+ .swiper-slide h1{
+   width: 30%;
+   height: 50%;
+   position: fixed;
+   left: 70%;
+   bottom: 10%;
+   text-align: start;
+   align-items: end;
+   justify-content: end;
+   font-size: 3vw;
+   font-weight: 800;
+   color: white;
+ }
+ .page2 .txt{
+   position: absolute;
+   top: 110%;
+   left: 10%;
+   z-index: 1500;
+   font-size: 4vw;
+   font-weight: 500;
+  background: transparent;
+    
+ 
+   width: fit-content;
+ }
+ .page2 .txt h1{
+   color: transparent;
+   font-family: sans-serif;
+   background: transparent;
+   -webkit-text-stroke: 1px   white;
  }
  
  .page3{
     width: 100%;
     height: 70vh;
-    background:  #00000067;
+    background: rgb(161, 161, 161);
  }

@@ -1,6 +1,7 @@
 "use client"
 import Link from "next/link";
 import Index from "../page";
+import Style  from "@/app/Gallery/gallery.css";
 
 
 function Gallery() {
