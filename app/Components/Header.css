@@ -43,3 +43,14 @@ body {
     font-size: 16px;
     
 }
+
+
+@media (max-width: 768px) {
+    /* Styles for small screens */
+    .page2{
+      display: none;
+    }
+    .Nav{
+        display: none;
+    }
+  }

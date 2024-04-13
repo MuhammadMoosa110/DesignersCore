@@ -4,6 +4,9 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/pagination';
 import { Mousewheel, Pagination } from 'swiper/modules';
+import { EffectCards } from 'swiper/modules';
+
+import 'swiper/css/effect-cards';
 function Index() {
   return ( 
     <>
@@ -19,7 +22,7 @@ function Index() {
       </div>
     <div className="page2">
         <div className='txt'> <h1>Services</h1></div>
-    <Swiper
+    <Swiper 
         direction={'vertical'}
         slidesPerView={1}
         spaceBetween={30}
@@ -72,8 +75,31 @@ function Index() {
          
       </Swiper>
 
+       
+</div>
+<div className="responsive">
+<Swiper
+        effect={'cards'}
+        grabCursor={true}
+        modules={[EffectCards]}
+        className="mySwiper"
+      >
+        <SwiperSlide style={{borderRadius:"20px",background:"linear-gradient(81deg, #35DD58FF 0%, #2B576AFF 82%)"}}>Logo Designing</SwiperSlide>
+        <SwiperSlide style={{borderRadius:"20px",background:'linear-gradient(105deg, #81AEB9FF 0%, #0B3E60FF 100%)'}}>UI / UX</SwiperSlide>
+        <SwiperSlide style={{borderRadius:"20px",background:"linear-gradient(58deg, #483094FF 0%, #690E84FF 61%)"}}>Web Development</SwiperSlide>
+        <SwiperSlide style={{borderRadius:"20px",}}>Digital Marketing</SwiperSlide>
+        <SwiperSlide style={{borderRadius:"20px",}}>Video Animation</SwiperSlide>
+        <SwiperSlide style={{borderRadius:"20px",}}>Graphic Designing</SwiperSlide>
+        <SwiperSlide style={{borderRadius:"20px",}}>Package Designing</SwiperSlide>
+         
+      </Swiper>
+</div>
+    <div className="page3">
+      <div className='bgShades'></div>
+      <div className='glass'>
+        <h1>ABOUT</h1>
+      </div>
     </div>
-    <div className="page3"></div>
     </div>
     </>
    );
